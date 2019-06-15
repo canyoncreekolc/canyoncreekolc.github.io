@@ -143,7 +143,7 @@ body.main-body {
 
 .basic-slider .item {
     padding: 20px 0;
-        height:200px;
+    height: 200px;
     background-color: rgba(0, 100, 100, 0.8);
     text-align: center;
     color: white;
@@ -179,7 +179,7 @@ body.main-body {
     font-family: 'Tauri';
     display: flex;
     text-transform: uppercase;
-/*    font-size: 4rem;*/
+    /*    font-size: 4rem;*/
     letter-spacing: 7px;
     justify-content: center;
     align-items: center;
@@ -189,9 +189,15 @@ body.main-body {
     height: 200px;
 }
 
-.adventure-images .container #myCarouselone{
-    width:100%;
+.adventure-images .container #myCarouselone {
+    width: 100%;
     padding: 0;
+    margin-bottom: 40px
+}
+
+.adventure-images {
+    background-color: white;
+    margin-bottom: 100px;
 }
 
 /* Footer */
@@ -207,11 +213,11 @@ body.main-body {
 
 .footer-items .footer-one {
     margin: 0 30px;
-/*    width: 100%;*/
+    /*    width: 100%;*/
 }
 
 .footer-items .footer-two {
-   text-align: center;
+    text-align: center;
 }
 
 .footer-items {
