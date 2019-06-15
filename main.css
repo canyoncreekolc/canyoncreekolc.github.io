@@ -28,7 +28,7 @@ body {
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
-    padding-bottom: 30rem;
+    padding-bottom: 40rem;
 }
 
 body.main-body {
@@ -159,11 +159,13 @@ body.main-body {
 }
 
 .basic-slider .twoone {
-    padding: 10px
+    padding: 10px;
+    width: 100%
 }
 
 .basic-slider .twotwo {
-    padding: 10px
+    padding: 10px;
+    width: 100%;
 }
 
 .basic-slider .item h3 {
@@ -204,7 +206,7 @@ body.main-body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     color: rgba(15, 65, 103);
     padding: 10px 0;
     background-color: lightgrey;
@@ -212,9 +214,11 @@ body.main-body {
 
 .footer-items .footer-one {
     margin: 0 30px;
+    text-align: center;
 }
 
 .footer-items .footer-two {
+    margin: 0 30px;
     text-align: center;
 }
 
@@ -223,7 +227,12 @@ body.main-body {
     align-items: flex-start;
     flex-wrap: nowrap;
     justify-content: center;
+    font-size: 15px
 
+}
+
+.footer-items h4{
+    font-size: 25px
 }
 
 .footer-items a {
@@ -234,6 +243,7 @@ body.main-body {
 .footer-bottom {
     margin-top: 30px;
     text-align: center;
+    font-size: 15px;
 }
 
 /*
