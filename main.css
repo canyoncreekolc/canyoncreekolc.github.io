@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
@@ -26,12 +26,12 @@ body {
     font-size: 1rem;
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
     min-height: 100%;
-    padding-bottom: 40rem;
+    padding-bottom: 19rem;
 }
 
 body.main-body {
+    min-height: 100vh;
     background: url(Images/startrees.jpg);
     background-position: left 100% bottom 25%;
     background-attachment: fixed;
@@ -50,33 +50,73 @@ body.main-body {
     background-color: white;
     height: 80px;
     align-items: center;
+    /*    overflow: hidden;*/
+    /*    background-color: rgba(0, 0, 0, 0.7);*/
+    /*    margin-top: 0;*/
+    /*    width: 100%;*/
+
 }
 
 .logo {
     float: left;
-    max-width: 150px;
-    max-height: 100px
+    max-width: 250px;
+    max-height: 200px
 }
 
-.main-links {
+.nav-items {
     margin-left: auto;
     align-self: right;
-    font-size: 20px;
+    font-size: 23px;
 }
 
-.topnav a {
+.dropdown {
+    float: left;
+    margin: 0 20px;
+}
+
+.dropdown .dropbtn {
+    font-size: inherit;
+    border: none;
+    outline: none;
     color: black;
-    padding: .5rem .5rem;
+    padding: 1.5rem 1rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    min-width: 130px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 14px;
     text-decoration: none;
-    padding: 0 30px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgrey;
+    color: black;
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .heading-primary {
     color: #F8F8FF;
     padding: 6%;
     text-transform: uppercase;
-    height: 616px;
-
+    /*    height: 616px;*/
 }
 
 .heading-primary-main {
@@ -193,7 +233,7 @@ body.main-body {
 .adventure-images .container #myCarouselone {
     width: 100%;
     padding: 0;
-    margin-bottom: 40px
+    margin: 40px 0;
 }
 
 .adventure-images {
@@ -201,12 +241,40 @@ body.main-body {
     margin-bottom: 100px;
 }
 
+.info {
+    font-family: 'Tauri';
+    display: flex;
+    flex-flow:column;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(0, 100, 100, 0.8);
+   color: white;
+    padding: 10px 10px;
+    margin-bottom: 50px
+}
+
+.pricing {
+    font-family: 'Tauri';
+    display: flex;
+    flex-flow: column;
+    text-transform: uppercase;
+/*    align-items: center;*/
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+    color: rgba(15, 65, 103);
+    padding: 10px 10px;
+    margin-bottom: 100px
+}
+
 /* Footer */
 .main-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40rem;
+    height: 19rem;
     color: rgba(15, 65, 103);
     padding: 10px 0;
     background-color: lightgrey;
@@ -228,10 +296,9 @@ body.main-body {
     flex-wrap: nowrap;
     justify-content: center;
     font-size: 15px
-
 }
 
-.footer-items h4{
+.footer-items h4 {
     font-size: 25px
 }
 
@@ -241,7 +308,7 @@ body.main-body {
 }
 
 .footer-bottom {
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     font-size: 15px;
 }
