@@ -39,6 +39,14 @@ body.main-body {
     background-size: cover;
 }
 
+body.second-body {
+    min-height: 100vh;
+    background: url(Images/campfireback.jpg);
+    background-position: left 100% bottom 25%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover
+}
 
 .main-header-logo {
     width: 100%;
@@ -140,6 +148,14 @@ body.main-body {
     font-size: 60px;
 }
 
+a.link{
+    color:greenyellow;
+}
+a.link:hover, a.link:visited{
+    color:palegreen;
+}
+
+
 /* Movement */
 
 @keyframes moveInLeft {
@@ -231,14 +247,16 @@ body.main-body {
 }
 
 .adventure-images .container #myCarouselone {
-    width: 100%;
-    padding: 0;
+/*    width: 90%;*/
+/*    padding: 0;*/
     margin: 40px 0;
 }
 
 .adventure-images {
     background-color: white;
-    margin-bottom: 100px;
+/*    margin-bottom: 100px;*/
+    flex-basis: 10%;
+    
 }
 
 .info {
@@ -255,18 +273,23 @@ body.main-body {
     margin-bottom: 50px
 }
 
+.data{
+    display: flex;
+    margin-bottom: 20px;
+}
+
 .pricing {
     font-family: 'Tauri';
     display: flex;
     flex-flow: column;
     text-transform: uppercase;
-/*    align-items: center;*/
+    align-self: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     background-color: white;
     color: rgba(15, 65, 103);
-    padding: 10px 10px;
-    margin-bottom: 100px
+    padding: 80px 10px;
+/*    margin-bottom: 100px*/
 }
 
 /* Footer */
@@ -312,71 +335,3 @@ body.main-body {
     text-align: center;
     font-size: 15px;
 }
-
-/*
- Medium Screen 
-
-@media screen and (min-width: 500px) {
-    .nav-items-one {
-        justify-content: flex-start;
-    }
-
-    .topnav a {
-        padding: .5rem 1rem;
-        text-decoration: none;
-        font-size: 24px;
-
-    }
-
-    .heading-primary {
-        margin-top: 20px
-    }
-
-    .heading-primary-main {
-        font-size: 4.5rem;
-        letter-spacing: 9px;
-    }
-
-    .heading-primary-sub {
-        font-size: 1.9rem;
-        letter-spacing: 9px;
-    }
-
-     Footer 
-    .main-footer {
-        padding: 25px;
-        font-size: 17px;
-    }
-}
-*/
-
-/*
-@media screen and (min-width: 870px) {
-    .nav-items-one {
-        justify-content: flex-start;
-    }
-
-    .topnav a {
-        padding: 1rem 1rem;
-        text-decoration: none;
-        font-size: 28px;
-
-    }
-
-    .heading-primary-main {
-        font-size: 5rem;
-        letter-spacing: 9px;
-    }
-
-    .heading-primary-sub {
-        font-size: 2rem;
-        letter-spacing: 9px;
-    }
-
-     Footer 
-    .main-footer {
-        padding: 25px;
-        font-size: 17px;
-    }
-}
-*/
