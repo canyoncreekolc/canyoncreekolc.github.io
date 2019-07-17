@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-    <!--    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $('#footer').load("../templates/footer.html");
+
+        });
+
+    </script>
 </head>
 
 <body class="main-body">
+
     <header>
         <div class="topnav" id="myTopnav">
             <div class="logo">
@@ -40,7 +48,7 @@
                     <button class="dropdown-btn">Facilities <i class="fa fa-caret-down"></i> </button>
                     <div class="dropdown-container">
                         <a href="HTML/FacilitySorry.html">Stay</a>
-                        <a href="HTML/FacilitySorry.html">Ropes</a>
+                        <a href="HTML/FacilitySorry.html">Comming Soon</a>
                     </div>
                     <button class="dropdown-btn">Packages <i class="fa fa-caret-down"></i> </button>
                     <div class="dropdown-container">
@@ -50,7 +58,7 @@
             </div>
         </div>
     </header>
-
+    
     <div id="main-head">
         <section class="text-box">
             <h1 class="heading-primary">
@@ -153,7 +161,7 @@
             </div>
         </div>
     </div>
-
+    
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -170,34 +178,11 @@
                 }
             });
         }
+
     </script>
 
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <h4><u>Contact Us</u></h4>
-        </div>
-        <div class="footer-items">
-            <div class="footer-one">
-                <p>(406)640-3370</p>
-                <p>ofycamps@gmail.com</p>
-            </div>
-            <div class="footer-two">
-                <p>Mailing Address<br>
-                    PO Box 163<br>
-                    Newdale, ID 83426</p>
-            </div>
-            <div class="footer-two">
-                <p>Physical Address<br>
-                    3150 S Canyon Creek Rd<br>
-                    Newdale, ID 83436</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <small> &copy;2019 Canyan Creek OLC</small>
-            <br>
-            <small>Background Photo By </small>
-            <a id="inner-link" href="https://unsplash.com/" target="_blank">Unsplash</a>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
-</body></html>
+</body>
+
+</html>
